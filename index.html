@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="deaf-scientists/css.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px
+        }
+    </style>
+    <style type="text/css">
+        @media print {
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+        
+        @media screen {
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style type="text/css">
+        .gm-style {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            text-decoration: none
+        }
+    </style>
+    <title>Deaf Scientists</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+
+    <link rel="stylesheet" href="deaf-scientists/main.css">
+
+    <script style="" src="deaf-scientists/common.js" charset="UTF-8" type="text/javascript"></script>
+    <script src="deaf-scientists/map.js" charset="UTF-8" type="text/javascript"></script>
+    <script src="deaf-scientists/util.js" charset="UTF-8" type="text/javascript"></script>
+    <script src="deaf-scientists/marker.js" charset="UTF-8" type="text/javascript"></script>
+    <script src="deaf-scientists/onion.js" charset="UTF-8" type="text/javascript"></script>
+    <script src="deaf-scientists/stats.js" charset="UTF-8" type="text/javascript"></script>
+    <script src="deaf-scientists/controls.js" charset="UTF-8" type="text/javascript"></script>
+</head>
+
+<body class="viewing_1 fixed">
+
+    <!-- Loading -->
+    <section class="loading scrollable loaded">
+        <div class="loading_wrapper">
+            <div class="load load_top">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 93.3 123.5" enable-background="new 0 0 93.3 123.5" xml:space="preserve">
+                    <polygon fill="#0B4B68" points="93.3,123.5 73.6,0 0,123.5 "></polygon>
+                </svg>
+            </div>
+            <div class="load load_bottom">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 93.3 123.5" enable-background="new 0 0 93.3 123.5" xml:space="preserve">
+                    <polygon fill="#0B4B68" points="93.3,123.5 73.6,0 0,123.5 "></polygon>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main-Page -->
+    <header id="header">
+        <section id="main_bg"></section>
+        <!-- <nav id="arrow_down"></nav> -->
+        <nav id="main_menu">
+            <div class="menu_icon">
+                <div class="close_line"></div>
+            </div>
+            <figure id="ic_logo">
+            </figure>
+            <ul class="main_nav">
+                <li class="nav_li" data-linked-page="1">
+                    <a href="#home" class="nav_links on">Home</a>
+                </li>
+                <li class="nav_li" data-linked-page="2">
+                    <a href="#about" class="nav_links">Ruth</a>
+                </li>
+                <li class="nav_li" data-linked-page="3">
+                    <a href="#our-team" class="nav_links">Oliver</a>
+                </li>
+                <li class="nav_li" data-linked-page="4">
+                    <a href="#courses" class="nav_links">Annie</a>
+                </li>
+                <li class="nav_li" data-linked-page="5">
+                    <a href="#learning-model" class="nav_links">Charles</a>
+                </li>
+                <li class="nav_li" data-linked-page="6">
+                    <a href="#iit-jee" class="nav_links">David</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="side_page page_side">
+        <div class="register_wrapper">
+            <div class="register_title">
+                <h3>Student<br> Registration</h3>
+            </div>
+            <div class="register_body">
+                <form method="post" id="registration_form" class="form">
+                    <input name="student_name" id="student_name" placeholder="Full Name" required="" type="text">
+                    <select id="student_course" class="form_select" required="">
+                        <option value="" selected="selected">Select your Grade</option>
+                    </select>
+                    <select name="school" id="student_school" class="form_select" required="">
+                        <option value="" selected="selected">Select your school</option>
+                    </select>
+                    <input name="email" id="student_email" placeholder="Email" required="" type="email">
+                    <div class="student_phone_wrapper">
+                        <select id="student_phone" class="form_select">
+                            <option selected="selected" value="050">050</option>
+                        </select>
+                        <input name="phone" id="student_phone" placeholder="Mobile Number" required="" type="tel">
+                    </div>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+            <div class="register_response_wrapper">
+                <div class="register_response_box"></div>
+                <div class="register_retry">Retry</div>
+            </div>
+        </div>
+    </section>
+    <section style="transform: translate3d(0px, 0%, 0px);" class="main main-wrapper">
+
+        <!-- Page(1) -->
+        <section data-page="1" style="top: 0%;" class="pages page_1 section active">
+        </section>
+
+        <!-- Page(2) -->
+        <section data-page="2" style="top: 100%;" class="pages page_2 section">
+            <article class="p2_main">
+                <h2>Ruth Benedict</h2>
+                <div class="line_wrapper">
+                    <p class="p2_paragraph">Ruth Benedict was born June 5, 1887 in New York. Ms. Benedict’s father died when she was two. Her mother did not notice she could not hear. She thought Ms. Benedict did not pay attention and had bad behavior. Ms. Benedict was very unhappy when she was a child. She thought no one understood how she felt. Ms. Benedict loved to write stories. Before college she attended St. Margaret’s school. Then she went to Vassar College. She studied in English. After she graduated she married Stanley Rossiter Benedict. They divorced because they could not get along. Ms. Benedict became interested in anthropology. She studied at Columbia University. She graduated with a doctorate degree in 1923. The first culture she studied was the American Indian culture. She wrote several books about what she saw. Ms. Benedict struggled to communicate with the Indians. It took a long time. Many people had to help her. Being deaf helped Ms. Benedict become successful. She focused on the things she could see instead of the things she could hear. She decided that each culture had its own personality. She wrote a book about it called “Patterns of Culture.” Ms. Benedict tried hearing aids, but she did not like them. She taught at Columbia University for many years. Later, Ms. Benedict worked for the government. She helped them learn about the cultures of Asia and Europe during World War II. During this time she wrote a famous book “The Chrysanthemum and the Sword: Patterns of Japanese Culture.” Being deaf helped Ms. Benedict in her career. She was very successful.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Page(3) -->
+        <section data-page="3" style="top: 200%;" class="pages page_3 section">
+            <h2 class="p3_title">Oliver Heaviside</h2>
+            <div class="monfa-red_slider">
+                <article data-index="1" class="slides slide_-2">
+                    <figure class="pic_wrapper">
+                        <!--<img src="deaf-scientists/moh_soh_1.jpg" alt="" class="face">-->
+                    </figure>
+                    <div class="info">
+                        <h3 class="headings">Mohammad Sohaib Ali</h3>
+                        <h4 class="headings">JEE RANK 524 - IIT DELHI</h4>
+                        <h5 class="headings">Research &amp; Content Development</h5>
+                    </div>
+                </article>
+            </div>
+            <div class="team_wrapper">
+                <article class="p3_paragraph">
+                    <h3>Oliver Heaviside</h3>
+                    <p><small>
+					Oliver Heaviside was born on May 18, 1850 in Camden Town, London.  Heaviside became interested in electrical science because his uncle was an electrical scientist.  He got his start as a telegraphic operator.  He taught himself Morse Code and studied books about science.  It was during this time that he began losing his hearing.
+
+After quitting this job he started researching electrical science on his own time at home. Heaviside was very good at math equations and used them to explain electric currents.  He invented “operational calculus” and the “telegrapher’s equation.”  Another deaf scientist, John Ambrose Fleming, was able to use the things Heaviside discovered in his work.
+
+He was the first to explain the continuous movement of electrons.  He was also the first to predict that as a charge’s speed increases so does the mass.
+
+Heaviside did not have many friends.  He liked to be alone. When he was alone, he wrote many papers that appeared in several different magazines such as The English Mechanic and Philosophical Magazine.  His most important discoveries were his theories and formulas about telephones.
+
+Heaviside thought there was a layer of the atmosphere that would reflect radio waves.  This would allow people to make farther calls.  He was right! The layer of the atmosphere was named the Kennelly-Heaviside layer.  Now we call it the ionosphere.
+					</small>
+					</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Page(4) -->
+        <section data-page="4" style="top: 300%;" class="pages page_4 section">
+            <div id="p4_wrapper" class="bottom_active">
+                <h2>Annie Jump Cannon</h2>
+
+
+                <section class="p4_sides side_right">
+                    <div class="back_bottom"></div>
+                    <div class="page_intro_wrapper">
+                        <div class="p4_triangles">
+                            <h3></h3>
+                            <h6></h6>
+                            <div class="triangle_wrapper">
+                                <svg version="1.1" class="triangle" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.7 55.7" enable-background="new 0 0 55.7 55.7" xml:space="preserve">
+                                    <polygon class="triangle_poly" points="3.5,42.3 27.8,0.1 52.2,42.3 " transform="scale(2.5) translate(-16.75,-16.75)"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="diamonds_wrapper">
+                        <li class="diamonds dim_1">
+                            <h5></h5>
+                            <p class="smaller"></p>
+                        </li>
+                        <li class="diamonds dim_2">
+                            <h5></h5>
+                            <p></p>
+                        </li>
+                        <li class="diamonds dim_3">
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </li>
+                        <li class="diamonds dim_4">
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </li>
+                        <li class="diamonds dim_5">
+                            <h5></h5>
+                            <p></p>
+                        </li>
+                    </ul>
+                    <article>
+                        <p></p>
+                    </article>
+                </section>
+
+                <section class="p4_sides side_bottom">
+                    <div class="back_bottom"></div>
+                    <div class="page_intro_wrapper">
+                        <div class="p4_triangles p4_triangle_bottom">
+                            <h3>Info</h3>
+                            <h6></h6>
+                            <div class="triangle_wrapper">
+                                <svg version="1.1" class="triangle" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.7 55.7" enable-background="new 0 0 55.7 55.7" xml:space="preserve">
+                                    <polygon class="triangle_poly" points="3.5,42.3 27.8,0.1 52.2,42.3 " transform="scale(2.5) translate(-16.75,-16.75)"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="diamonds_wrapper">
+                        <li class="diamonds dim_1">
+                            <h5></h5>
+                            <p class="smaller"></p>
+                        </li>
+                        <li class="diamonds dim_2">
+                            <h5></h5>
+                            <p></p>
+                        </li>
+                        <li class="diamonds dim_3">
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </li>
+                        <li class="diamonds dim_4">
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </li>
+                        <li class="diamonds dim_5">
+                            <h5></h5>
+                            <p></p>
+                        </li>
+                    </ul>
+                    <article>
+                        Ms. Cannon won a lot of awards for her work.  The National Academy of Sciences gave her the Draper Gold Medal.  She was the first woman to be given this award.  She won the Ellen Richards Research Prize in 1932. She used the money she won to set up her own award, the Annie Jump Cannon Award.  This award is still given each year to new women astronomers.
+
+She was given six honorary degrees.  One of them was from Oxford.  She was the first woman to be given this honor too.  In 1922 she was given the Nova Medal by the American Association of Variable Star Observers.
+
+Most of her awards came from places and people outside of where she worked.  It made Harvard look bad.  They didn't want to give her awards because she was a woman and deaf.  She finally got an award from Harvard at the end of her career.  It was the William Cranch Bond Astronomer Award.  She died three years later on April 13, 1941. 
+                        </p>
+                    </article>
+                </section>
+
+                <section class="p4_sides side_left">
+                    <div class="back_bottom"></div>
+                    <div class="page_intro_wrapper">
+                        <div class="p4_triangles">
+                            <h3>Info</h3>
+                            <h6></h6>
+                            <div class="triangle_wrapper">
+                                <svg version="1.1" class="triangle" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.7 55.7" enable-background="new 0 0 55.7 55.7" xml:space="preserve">
+                                    <polygon class="triangle_poly" points="3.5,42.3 27.8,0.1 52.2,42.3 " transform="scale(2.5) translate(-16.75,-16.75)"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="diamonds_wrapper">
+                        <li class="diamonds dim_1">
+                            <h5></h5>
+                            <p class="smaller"></p>
+                        </li>
+                        <li class="diamonds dim_2">
+                            <h5></h5>
+                            <p></p>
+                        </li>
+                        <li class="diamonds dim_3">
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </li>
+                        <li class="diamonds dim_4">
+                            <h5></h5>
+                            <p>
+                            </p>
+                        </li>
+                        <li class="diamonds dim_5">
+                            <h5></h5>
+                            <p></p>
+                        </li>
+                    </ul>
+                    <article>
+                        <p>
+                            Annie Jump Cannon was born December 11, 1863.   She was born in Dover, Delaware.  When Ms. Cannon was a child she had a cold.  The cold caused Ms. Cannon to become deaf.  Every year she could hear less and less until she couldn’t hear anymore.  Ms. Cannon read people's lips.
+
+When she got older she went to Wellesley College and Radcliffe College.  She studied physics.  Then she started working at the Harvard College Observatory.  She was paid 50 cents an hour.  Her job was to take care of all the pictures of stars.  Her boss thought she was very smart so he decided to make her his assistant.  Now instead of taking care of the pictures of stars, she was studying them herself!
+
+She was very good at her job.  She discovered 300 variable stars .
+She also divided 350,000 stars into groups.  She decided which group to put them in by their temperature.  The groups were named "O", "B", "A", "F", "G", "K", and "M".  Her co-worker, Henrietta Swan Leavitt discovered that the stars in the groups were similar in color.
+
+She reported what she discovered in a book, Catalogue of the Spectra of 1122 Stars.  She also wrote articles for the Henry Draper Catalogues.
+</p>
+                    </article>
+                </section>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Page(5) -->
+        <section data-page="5" style="top: 400%;" class="pages page_5 section">
+            <div class="mol_5"></div>
+            <article class="p5_main">
+                <!-- <h2>Quattro</h2> -->
+                <h2>Charles Nicolle</h2>
+                <div class="line_wrapper">
+                    <p class="p5_paragraph">
+                        Charles Nicolle was born on September 12, 1866 in Rouen, France.  By the time Nicolle was 18 years old he was deaf.  He went to school at the Pasteur Institute in Paris.
+
+Many people in his family were interested in science.  He could read lips very well. Nicolle got his doctorate degree.  While he was in school he studied a disease caused by Ducrey’s bacillus.  After graduating he was an assistant professor and worked at the hospital.
+He worked hard to develop ways to vaccinate people against diphtheria.  He changed jobs and worked at the Pasteur Institute. He worked there because he wanted to build a big place for people to research and make vaccines.  The place he built was the best research center. 
+
+Nicolle’s biggest accomplishment was when he discovered the cause of typhus.  He discovered that lice spread typhus.  
+He won the Nobel Prize for this discovery.  Many lives were saved because of his discovery during World War I.  He also discovered that people can have a contagious sickness their whole life without even knowing they are sick.
+
+He also studied how ticks and flies spread disease and helped identify influenza or the flu as a virus.  He also worked on a vaccination for measles.  Later in his life Nicolle was a teacher at the College de France. 
+
+He died on February 28, 1936 in Tunis, Tunisia.    
+					</p>
+                </div>
+                <aside class="ball_wapper">
+                    <div class="balls ball_1" data-index="1">
+                        <div class="ball_cover">
+                            <i></i>
+                            <h4></h4>
+                        </div>
+                    </div>
+                    <div class="balls ball_2" data-index="2">
+                        <div class="ball_cover">
+                            <i></i>
+                            <h4></h4>
+                        </div>
+                    </div>
+                    <!--<div class="balls ball_3" data-index="3">
+                        <div class="ball_cover">
+                            <i></i>
+                            <h4></h4>
+                        </div>
+                    </div>-->
+                    <div class="balls ball_4" data-index="4">
+                        <div class="ball_cover">
+                            <i></i>
+                            <h4></h4>
+                        </div>
+                    </div>
+                    <article class="balls_article b1_article">
+                        <span class="balls_close_icon"></span>
+                        <h3>Interactive lectures</h3>
+                        <p class="balls_paragraph">At Aspire One our lectures are Interactive. This ensures a two way communication bridge between teachers and students. Besides providing new ideas and strategies, we also deliver different theories related to concepts by incorporating engagement triggers. This collaborative and inclusive engagement methods paired with appropriate content delivery mechanisms support understanding of concepts and maximum retention of lessons. It also enhances the value of the lectures and prevents boredom by placing the young minds on an accountable platform. Because our lectures consist of two way communication, it provides the teachers with an insight into the student's understanding and their thinking process relating to the concept under discussion.
+                        </p>
+                        <h5><q>Our Interactive lectures keep students engaged in classes</q></h5>
+                    </article>
+                    <article class="balls_article b2_article">
+                        <span class="balls_close_icon"></span>
+                        <h3>Tutorials</h3>
+                        <p class="balls_paragraph">
+                            Our specially designed tutorials helps to groom critical thinking and comprehension skills of the students. This is where the concepts learned in lectures are applied. We provide specialized tutorial sheets for students to practice based on the concepts learned from the interactive lectures. It is a crucial aspect of the learning experience which helps to hone the problem-solving skills of the students. We take the time to understand and solve different problems using a variety of approaches. Tutorials are intended to help students gain a deeper understanding of the subject matter which enables their understanding to see the implications and significance of their knowledge and apply it the right contexts. It fosters a healthy relationship between the teachers and students, thereby personalizing the entire experience of the students and supporting their personal career development in general.
+                        </p>
+                        <h5><q>Tutorials ensure that students are well versed with the course content</q></h5>
+                    </article>
+                    <article class="balls_article b3_article">
+                        <span class="balls_close_icon"></span>
+                        <h3>Regular Assessments</h3>
+                        <p class="balls_paragraph">Assessments are conducted at regular intervals which help students to achieve consistency, create a better understanding, test their grasp of concepts, and develop the mindset required to face exams. It goes a long way to fulfill our Vision of increasing the competition level among students. Besides helping the students, the assessments helps us to gauge the student's learning curve so that we can adjust our pace to their needs. It helps us to identify their strengths and weaknesses. Assessments involve an ongoing process of analysis and reflection on evidence, and to make consistent and informed judgments with an aim of improving the student’s future learning experiences.
+                        </p>
+                        <h5><q>Regular assessments are conducted to record the progress of the students</q></h5>
+                    </article>
+                    <article class="balls_article b4_article">
+                        <span class="balls_close_icon"></span>
+                        <h3>Feedback</h3>
+                        <p class="balls_paragraph">
+                            A comprehensive analysis of assessments is provided to parents and students. This feedback clealy details the learning progress of the students. When imparting feedback to students and parents, we engage in dialogues which helps the students in the process of self assessment. This approach encourages learners to take responsibility for their learning. We are articulate and precise when providing feedback to ensure that parents and students are well informed and thus, enabling them to take the best corrective action as suited to their requirements.
+                            <br> With these coaching strategies, we ensure that quality learning practices are implemented accurately and taking our students to the limits of achievement.
+                        </p>
+                        <h5><q>We provide feedback regarding student progress over time</q></h5>
+                    </article>
+                </aside>
+            </article>
+        </section>
+        <!-- Page(6) -->
+        <section data-page="6" style="top: 500%;" class="pages page_6 section">
+            <article class="p6_main">
+                <h2>David James</h2>
+                <div class="line_wrapper">
+                    <p class="p6_paragraph">
+                    David James was born in Chicago, Illinois on August 1, 1950.  He was sick when he was four years old.  He had meningitis.  He became deaf because of the sickness.  First, he went to a day school for the deaf.  Then he went to St. Ignatius High School.  He was mainstreamed and needed no extra help.  However, he still struggled in school because he was deaf and African American. 
+He went to college at Shimer College.  He got a bachelors degree in Natural Sciences.  He got a masters degree and doctorate degree in math at the University of Chicago.  He never needed extra help in school.  He did not use interpreters or note takers.  He struggled his first year, but he was determined to finish college without extra help.
+
+After college he wanted to become a professor.  Many people did not think a deaf person could be a professor.  However, he was determined.  He taught at Indiana University and Rutgers University.  He had to learn to communicate with his students successfully. 
+
+He was given the Martin Luther King and Rosa Parks Visiting Professorship at Wayne State University in 1987. This means that he was a teacher there.  He was also the Associate Research Scientist at the Courant Institute of Mathematical Sciences at New York University.
+
+James is now an Associate Professor at Howard University.  He teaches math.  He is very interested in using math and computers to predict development near transportation.  He is also interested in topology. 
+He was chosen as the District of Columbia Disabled Individual of the Year in 1989.   He was also selected to talk about topology at the 36th Annual Jackson Science Lecture at Eureka College in 1990.   James continues to do research and speak to different groups of people.     
+					</p>
+                </div>
+            </article>
+        </section>
+
+    </section>
+    <script src="deaf-scientists/monfa.js"></script>
+    <script src="deaf-scientists/js"></script>
+    <script src="deaf-scientists/main.js"></script>
+
+</body>
+
+</html>
